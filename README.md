@@ -36,17 +36,20 @@ Through these projects, you will learn:
 ### Installation
 
 1. **Clone the repository:**
+
    ```bash
    git clone https://github.com/kimoban/alx-system_engineering-devops.git
    cd alx-system_engineering-devops
    ```
 
 2. **Navigate to specific project:**
+
    ```bash
    cd 0x03-shell_variables_expansions
    ```
 
 3. **Make scripts executable:**
+
    ```bash
    chmod +x *
    ```
@@ -54,6 +57,7 @@ Through these projects, you will learn:
 ## 📋 Requirements
 
 ### General Requirements
+
 - All scripts tested on Ubuntu 20.04 LTS
 - All scripts must be exactly two lines long (where applicable)
 - All files must end with a new line
@@ -68,11 +72,13 @@ Each project directory contains its own testing instructions and scripts. Refer 
 ## 📚 Resources
 
 ### Official Documentation
+
 - [ALX Africa](https://www.alxafrica.com/)
 - [Bash Manual](https://www.gnu.org/software/bash/manual/)
 - [Ubuntu Documentation](https://help.ubuntu.com/)
 
 ### Additional Learning
+
 - [Advanced Bash-Scripting Guide](https://tldp.org/LDP/abs/html/)
 - [Linux Documentation Project](https://tldp.org/)
 - [DevOps Roadmap](https://roadmap.sh/devops)
@@ -86,6 +92,7 @@ Each project directory contains its own testing instructions and scripts. Refer 
 5. Open a Pull Request
 
 ### Contribution Guidelines
+
 - Follow the existing code style
 - Add tests for new features
 - Update documentation as needed
@@ -104,7 +111,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👨‍💻 Author
 
-**Isaiah Kimoban**
+### Isaiah Kimoban
+
 - GitHub: [@kimoban](https://github.com/kimoban)
 - Email: [isaiahkimoban87@gmail.com](mailto:isaiahkimoban87@gmail.com)
 
@@ -127,7 +135,5 @@ If you encounter any issues or have questions:
 - **Languages:** Shell/Bash
 - **Documentation Coverage:** 100%
 - **Test Coverage:** Comprehensive
-
----
 
 *This repository is part of the ALX Software Engineering Program. For more information about ALX, visit [alxafrica.com](https://www.alxafrica.com/)*
