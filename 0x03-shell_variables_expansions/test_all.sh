@@ -37,7 +37,7 @@ run_test() {
 echo -e "\n${YELLOW}Testing 1-hello_you script...${NC}"
 if [[ -x "./1-hello_you" ]]; then
     result=$(./1-hello_you)
-    expected="hello MyUser"
+    expected="hello $USER"
     if [[ "$result" == "$expected" ]]; then
         echo -e "${GREEN}✓ PASSED${NC} - 1-hello_you works correctly"
         ((tests_passed++))
