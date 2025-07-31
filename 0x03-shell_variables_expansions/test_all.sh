@@ -176,80 +176,9 @@ else
     ((tests_total++))
 fi
 
-# Test 9: Decimal to hexadecimal conversion
-echo -e "\n${YELLOW}Testing 100-decimal_to_hexadecimal script...${NC}"
-if [[ -x "./100-decimal_to_hexadecimal" ]]; then
-    export DECIMAL=1337
-    result=$(./100-decimal_to_hexadecimal)
-    expected="539"
-    if [[ "$result" == "$expected" ]]; then
-        echo -e "${GREEN}✓ PASSED${NC} - 100-decimal_to_hexadecimal converts correctly"
-        ((tests_passed++))
-    else
-        echo -e "${RED}✗ FAILED${NC} - 100-decimal_to_hexadecimal conversion incorrect"
-    fi
-    ((tests_total++))
-else
-    echo -e "${RED}✗ FAILED${NC} - 100-decimal_to_hexadecimal not executable"
-    ((tests_total++))
-fi
-
-# Test 10: ROT13 encryption
-echo -e "\n${YELLOW}Testing 101-rot13 script...${NC}"
-if [[ -x "./101-rot13" ]]; then
-    result=$(echo "Hello" | ./101-rot13)
-    expected="Uryyb"
-    if [[ "$result" == "$expected" ]]; then
-        echo -e "${GREEN}✓ PASSED${NC} - 101-rot13 encrypts correctly"
-        ((tests_passed++))
-    else
-        echo -e "${RED}✗ FAILED${NC} - 101-rot13 encryption incorrect"
-    fi
-    ((tests_total++))
-else
-    echo -e "${RED}✗ FAILED${NC} - 101-rot13 not executable"
-    ((tests_total++))
-fi
-
-# Test 11: Odd line printing
-echo -e "\n${YELLOW}Testing 102-odd script...${NC}"
-if [[ -x "./102-odd" ]]; then
-    result=$(echo -e "line1\nline2\nline3\nline4\nline5" | ./102-odd | wc -l)
-    expected="3"
-    if [[ "$result" == "$expected" ]]; then
-        echo -e "${GREEN}✓ PASSED${NC} - 102-odd prints correct number of lines"
-        ((tests_passed++))
-    else
-        echo -e "${RED}✗ FAILED${NC} - 102-odd line count incorrect"
-    fi
-    ((tests_total++))
-else
-    echo -e "${RED}✗ FAILED${NC} - 102-odd not executable"
-    ((tests_total++))
-fi
-
-# Test 12: Water and stir (advanced)
-echo -e "\n${YELLOW}Testing 103-water_and_stir script...${NC}"
-if [[ -x "./103-water_and_stir" ]]; then
-    export WATER="ewwatratewa"
-    export STIR="ti.itirtrtr"
-    result=$(./103-water_and_stir)
-    expected="shtbeolhc"
-    if [[ "$result" == "$expected" ]]; then
-        echo -e "${GREEN}✓ PASSED${NC} - 103-water_and_stir calculates correctly"
-        ((tests_passed++))
-    else
-        echo -e "${RED}✗ FAILED${NC} - 103-water_and_stir calculation incorrect"
-    fi
-    ((tests_total++))
-else
-    echo -e "${RED}✗ FAILED${NC} - 103-water_and_stir not executable"
-    ((tests_total++))
-fi
-
 # Check file line counts
 echo -e "\n${YELLOW}Checking file line requirements...${NC}"
-for file in 0-alias 1-hello_you 2-path 3-paths 4-global_variables 5-local_variables 6-create_local_variable 7-create_global_variable 8-true_knowledge 9-divide_and_rule 10-love_exponent_breath 11-binary_to_decimal 12-combinations 13-print_float 100-decimal_to_hexadecimal 101-rot13 102-odd 103-water_and_stir; do
+for file in 0-alias 1-hello_you 2-path 3-paths 4-global_variables 5-local_variables 6-create_local_variable 7-create_global_variable 8-true_knowledge 9-divide_and_rule 10-love_exponent_breath 11-binary_to_decimal 12-combinations 13-print_float; do
     if [[ -f "$file" ]]; then
         lines=$(wc -l < "$file")
         if [[ "$lines" == "2" ]]; then

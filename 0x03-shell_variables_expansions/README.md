@@ -52,10 +52,6 @@ By the end of this project, you should be able to explain:
 | **11-binary_to_decimal** | Converts a number from base 2 to base 10 | `export BINARY=10100111001; ./11-binary_to_decimal` |
 | **12-combinations** | Prints all possible combinations of two letters, except oo | `./12-combinations` |
 | **13-print_float** | Prints a number with two decimal places | `export NUM=3.14159; ./13-print_float` |
-| **100-decimal_to_hexadecimal** | Converts a number from base 10 to base 16 | `export DECIMAL=1337; ./100-decimal_to_hexadecimal` |
-| **101-rot13** | Encodes and decodes text using ROT13 encryption | `echo "Hello" \| ./101-rot13` |
-| **102-odd** | Prints every other line from input, starting with the first | `ls -1 \| ./102-odd` |
-| **103-water_and_stir** | Adds two numbers in custom bases and outputs in base bestchol | `export WATER="ewwatratewa" STIR="ti.itirtrtr"; ./103-water_and_stir` |
 ```
 
 ## 🚀 Installation and Setup
@@ -71,7 +67,7 @@ By the end of this project, you should be able to explain:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/kimoban/alx-system_engineering-devops.git
+   git clone https://github.com/your-username/alx-system_engineering-devops.git
    cd alx-system_engineering-devops/0x03-shell_variables_expansions
    ```
 
@@ -140,25 +136,6 @@ export BINARY=10100111001
 # Test float formatting
 export NUM=3.14159265359
 ./13-print_float  # Should output: 3.14
-
-# Test decimal to hexadecimal conversion
-export DECIMAL=1337
-./100-decimal_to_hexadecimal  # Should output: 539
-
-export DECIMAL=16
-./100-decimal_to_hexadecimal  # Should output: 10
-
-# Test ROT13 encryption/decryption
-echo "Hello World" | ./101-rot13  # Should output: Uryyb Jbeyq
-echo "Uryyb Jbeyq" | ./101-rot13  # Should output: Hello World
-
-# Test odd line printing
-echo -e "line1\nline2\nline3\nline4\nline5" | ./102-odd  # Should output: line1, line3, line5
-
-# Test water and stir (advanced base conversion)
-export WATER="ewwatratewa"
-export STIR="ti.itirtrtr"
-./103-water_and_stir  # Should output: shtbeolhc
 ```
 
 ### Automated Testing
@@ -237,15 +214,15 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ### Isaiah Kimoban
 
-- GitHub: [@kimoban](https://github.com/kimoban)
+- GitHub: [@your-github-username](https://github.com/your-github-username)
 - LinkedIn: [Your LinkedIn Profile](https://linkedin.com/in/your-profile)
-- Email: [isaiahkimoban87@gmail.com](mailto:isaiahkimoban87@gmail.com)
+- Email: [your.email@example.com](mailto:your.email@example.com)
 
 ## 📞 Support
 
 If you have any questions or need help with this project:
 
-1. Check the [Issues](https://github.com/kimoban/alx-system_engineering-devops/issues) page
+1. Check the [Issues](https://github.com/your-username/alx-system_engineering-devops/issues) page
 2. Create a new issue with detailed description
 3. Contact the author directly
 
@@ -257,8 +234,8 @@ If you have any questions or need help with this project:
 
 ## 📊 Project Statistics
 
-- **Total Scripts:** 18 (14 mandatory + 4 advanced)
-- **Lines of Code:** 36 (2 lines per script)
+- **Total Scripts:** 14
+- **Lines of Code:** 28 (2 lines per script)
 - **Test Coverage:** 100%
 - **Documentation:** Comprehensive
 
